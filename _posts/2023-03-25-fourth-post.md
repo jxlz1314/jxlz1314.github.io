@@ -30,7 +30,7 @@ author: JIANG Xiao
 ![image](https://github.com/jxlz1314/myFigure/blob/main/HW3.jpg)
 - 入方向规则添加“1035”端口（即后续设置的SS端口）
 ![image](https://github.com/jxlz1314/myFigure/blob/main/HW4.jpg)
-![image](https://github.com/jxlz1314/myFigure/blob/main/test.png)
+![test](https://github.com/jxlz1314/myFigure/blob/main/test.png)
 
 # 1. 安装配置Shadowsocks客户端
 
