@@ -1,0 +1,65 @@
+I"Q<ul id="markdown-toc">
+  <li><a href="#1-安装配置shadowsocks客户端" id="markdown-toc-1-安装配置shadowsocks客户端">1. 安装配置Shadowsocks客户端</a>    <ul>
+      <li><a href="#11-安装shadowsocks客户端" id="markdown-toc-11-安装shadowsocks客户端">1.1 安装Shadowsocks客户端</a></li>
+      <li><a href="#12-配置shadowsocks客户端" id="markdown-toc-12-配置shadowsocks客户端">1.2 配置Shadowsocks客户端</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="1-安装配置shadowsocks客户端">1. 安装配置Shadowsocks客户端</h1>
+
+<h2 id="11-安装shadowsocks客户端">1.1 安装Shadowsocks客户端</h2>
+<ul>
+  <li>安装epel扩展源</li>
+  <li>采用Python包管理工具pip安装。
+    <blockquote>
+      <p>sudo yum -y install epel-release <br />
+sudo yum -y install python-pip</p>
+    </blockquote>
+  </li>
+  <li>安装Shadowsocks客户端
+    <blockquote>
+      <p>sudo pip install shadowsocks</p>
+    </blockquote>
+  </li>
+</ul>
+
+<h2 id="12-配置shadowsocks客户端">1.2 配置Shadowsocks客户端</h2>
+<ul>
+  <li>新建配置文件
+    <blockquote>
+      <p>sudo mkdir /etc/shadowsocks <br />
+sudo vi /etc/shadowsocks/shadowsocks.json</p>
+    </blockquote>
+  </li>
+  <li>添加配置信息
+    <blockquote>
+      <p>{ <br />
+“server”:”0.0.0.0”, <br />
+“server_port”:1035, <br />
+“local_address”: “127.0.0.1”, <br />
+“local_port”:1080, <br />
+“password”:”password”, <br />
+“timeout”:300, <br />
+“method”:”aes-256-cfb”, <br />
+“fast_open”: false, <br />
+“workers”: 1 <br />
+}</p>
+    </blockquote>
+  </li>
+  <li>参数说明：
+server：Shadowsocks服务器地址 <br />
+server_port：Shadowsocks服务器端口 <br />
+local_address：本地IP <br />
+local_port：本地端口 <br />
+password：Shadowsocks连接密码 <br />
+timeout：等待超时时间 <br />
+method：加密方式 <br />
+workers:工作线程数 <br />
+fast_open：true或false。开启fast_open以降低延迟，但要求Linux内核在3.7+。开启方法 
+    <blockquote>
+      <p>echo 3 &gt; /proc/sys/net/ipv4/tcp_fastopen</p>
+    </blockquote>
+  </li>
+</ul>
+:ET

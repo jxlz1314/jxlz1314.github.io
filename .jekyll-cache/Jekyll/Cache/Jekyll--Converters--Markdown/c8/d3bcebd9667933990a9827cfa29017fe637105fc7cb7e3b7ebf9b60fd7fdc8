@@ -1,0 +1,12 @@
+I"�<ul>
+  <li>content</li>
+</ul>
+
+<ol>
+  <li>安装配置Shadowsocks客户端</li>
+</ol>
+
+<p>1.1 安装Shadowsocks客户端
+安装epel扩展源
+采用Python包管理工pip安装。</p>
+:ET

@@ -1,0 +1,33 @@
+I"<ul id="markdown-toc">
+  <li><a href="#1-安装配置shadowsocks客户端" id="markdown-toc-1-安装配置shadowsocks客户端">1. 安装配置Shadowsocks客户端</a>    <ul>
+      <li><a href="#11-安装shadowsocks客户端" id="markdown-toc-11-安装shadowsocks客户端">1.1 安装Shadowsocks客户端</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="1-安装配置shadowsocks客户端">1. 安装配置Shadowsocks客户端</h1>
+
+<h2 id="11-安装shadowsocks客户端">1.1 安装Shadowsocks客户端</h2>
+<ul>
+  <li>安装epel扩展源</li>
+  <li>采用Python包管理工具pip安装。
+    <ol>
+      <li>sudo yum -y install epel-release</li>
+      <li>sudo yum -y install python-pip</li>
+    </ol>
+  </li>
+  <li>安装Shadowsocks客户端
+    <ol>
+      <li>sudo pip install shadowsocks
+1.2 配置Shadowsocks客户端</li>
+    </ol>
+  </li>
+  <li>新建配置文件
+    <ol>
+      <li>sudo mkdir /etc/shadowsocks</li>
+      <li>sudo vi /etc/shadowsocks/shadowsocks.json</li>
+    </ol>
+  </li>
+  <li>添加配置信息</li>
+</ul>
+:ET

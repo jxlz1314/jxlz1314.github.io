@@ -1,0 +1,31 @@
+I"�<ul id="markdown-toc">
+  <li><a href="#1-服务器购买配置" id="markdown-toc-1-服务器购买配置">1. 服务器购买配置</a>    <ul>
+      <li><a href="#11-购买华为云服务器" id="markdown-toc-11-购买华为云服务器">1.1 购买华为云服务器</a></li>
+      <li><a href="#12-配置云服务器" id="markdown-toc-12-配置云服务器">1.2 配置云服务器</a>        <ul>
+          <li><a href="#121-配置操作系统" id="markdown-toc-121-配置操作系统">1.2.1 配置操作系统</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="1-服务器购买配置">1. 服务器购买配置</h1>
+<h2 id="11-购买华为云服务器">1.1 购买华为云服务器</h2>
+<ul>
+  <li>进入官方网站
+    <blockquote>
+      <p>https://activity.huaweicloud.com</p>
+    </blockquote>
+  </li>
+  <li>或咨询万能的淘宝卖家</li>
+</ul>
+
+<p>选择购买境外的“弹性云服务器ECS”，价格¥99/年左右合适</p>
+
+<h2 id="12-配置云服务器">1.2 配置云服务器</h2>
+<h3 id="121-配置操作系统">1.2.1 配置操作系统</h3>
+<ul>
+  <li>登录进入个人服务器管理页面“控制台”</li>
+  <li>操作系统选择“CentOS 7.2 64bit”</li>
+</ul>
+:ET
