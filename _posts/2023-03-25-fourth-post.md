@@ -24,13 +24,12 @@ author: JIANG Xiao
 ### 1.2.2 配置防火墙
 - 登录进入个人服务器管理页面“控制台”
 - 选择“安全组”，点击“更改安全组”进行配置
-![image](https://github.com/jxlz1314/myFigure/blob/main/HW1.jpg)
+![HW1.jpg](https://s2.loli.net/2023/03/25/Ay5NcCHzDqtk6IO.jpg)
 - 点击“新建安全组”及“创建安全组”进行配置，将SS端口加入
-![image](https://github.com/jxlz1314/myFigure/blob/main/HW2.jpg)
-![image](https://github.com/jxlz1314/myFigure/blob/main/HW3.jpg)
+![HW2.jpg](https://s2.loli.net/2023/03/25/uYwzCDpZXko7vSP.jpg)
+![HW3.jpg](https://s2.loli.net/2023/03/25/wjzhK8UgsRyqQX5.jpg)
 - 入方向规则添加“1035”端口（即后续设置的SS端口）
-![image](https://github.com/jxlz1314/myFigure/blob/main/HW4.jpg)
-![image](https://github.com/jxlz1314/myFigure/blob/main/test.png)
+![HW4.jpg](https://s2.loli.net/2023/03/25/8L5pEdHkPYoO7nS.jpg)
 
 # 1. 安装配置Shadowsocks客户端
 
