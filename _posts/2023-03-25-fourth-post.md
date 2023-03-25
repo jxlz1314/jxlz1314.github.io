@@ -24,16 +24,21 @@ author: JIANG Xiao
 ### 1.2.2 配置防火墙
 - 登录进入个人服务器管理页面“控制台”
 - 选择“安全组”，点击“更改安全组”进行配置
-![image](https://github.com/jxlz1314/myFigure/blob/main/HW1.jpg)
+![HW1.jpg](https://s2.loli.net/2023/03/25/Ay5NcCHzDqtk6IO.jpg)
 - 点击“新建安全组”及“创建安全组”进行配置，将SS端口加入
-![image](https://github.com/jxlz1314/myFigure/blob/main/HW2.jpg)
-![image](https://github.com/jxlz1314/myFigure/blob/main/HW3.jpg)
+![HW2.jpg](https://s2.loli.net/2023/03/25/uYwzCDpZXko7vSP.jpg)
+![HW3.jpg](https://s2.loli.net/2023/03/25/wjzhK8UgsRyqQX5.jpg)
 - 入方向规则添加“1035”端口（即后续设置的SS端口）
-![image](https://github.com/jxlz1314/myFigure/blob/main/HW4.jpg)
+![HW4.jpg](https://s2.loli.net/2023/03/25/8L5pEdHkPYoO7nS.jpg)
+## 1.3 连接云服务器
+- 下载远程连接软件“SSH Secure Shell Client”
+> https://ccm.digidip.net/visit?url=https%3A%2F%2Fec.ccm2.net%2Fccm.net%2Fdownload%2Ffiles%2FSSHSecureShellClient-3.2.9.exe&ppref=https%3A%2F%2Fccm.net%2Fdownloads%2Fsecurity-and-maintenance%2F4997-ssh-secure-shell-windows%2F&currurl=https%3A%2F%2Fccm.net%2Fdownloads%2Fsecurity-and-maintenance%2F4997-ssh-secure-shell-windows%2F%3Fn%3D%26version%3Dwindows
+- 打开软件，输入：Host Name 为服务器ip地址，User Name 为 root，进行远程连接
+![HW5.jpg](https://s2.loli.net/2023/03/25/QZxPEr3qK1yL97i.jpg)
 
-# 1. 安装配置Shadowsocks客户端
+# 2. 服务器端安装配置Shadowsocks客户端
 
-## 1.1 安装Shadowsocks客户端
+## 2.1 安装Shadowsocks客户端
 - 安装epel扩展源
 - 采用Python包管理工具pip安装。
 > sudo yum -y install epel-release \
@@ -41,7 +46,7 @@ sudo yum -y install python-pip
 - 安装Shadowsocks客户端
 > sudo pip install shadowsocks 
 
-## 1.2 配置Shadowsocks客户端
+## 2.2 配置Shadowsocks客户端
 - 新建配置文件
 > sudo mkdir /etc/shadowsocks \
 sudo vi /etc/shadowsocks/shadowsocks.json
@@ -86,3 +91,12 @@ WantedBy=multi-user.target \
 > systemctl enable shadowsocks.service \
 systemctl start shadowsocks.service \
 systemctl status shadowsocks.service \
+
+# 3. 客服端安装配置Shadowsocks客户端
+- 下载Shadowsocks的windows版本，并解压安装
+> https://github.com/shadowsocks/shadowsocks-windows/releases/download/2.3.1/Shadowsocks-win-2.3.1.zip
+
+- 配置Shadowsocks客户端：点击服务器->编辑服务器，输入服务器ip，密码及端口即可保存，之后启用系统代理即可
+![HW6.jpg](https://s2.loli.net/2023/03/25/AIgvPkXE6KTzryh.jpg)
+- 开始你的愉快网上冲浪之旅吧！
+![HW7.jpg](https://s2.loli.net/2023/03/25/mBlyniaWHbw15M6.jpg)

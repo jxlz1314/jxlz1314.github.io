@@ -1,0 +1,152 @@
+I"�<ul id="markdown-toc">
+  <li><a href="#1-服务器购买配置" id="markdown-toc-1-服务器购买配置">1. 服务器购买配置</a>    <ul>
+      <li><a href="#11-购买华为云服务器" id="markdown-toc-11-购买华为云服务器">1.1 购买华为云服务器</a></li>
+      <li><a href="#12-配置云服务器" id="markdown-toc-12-配置云服务器">1.2 配置云服务器</a>        <ul>
+          <li><a href="#121-配置操作系统" id="markdown-toc-121-配置操作系统">1.2.1 配置操作系统</a></li>
+          <li><a href="#122-配置防火墙" id="markdown-toc-122-配置防火墙">1.2.2 配置防火墙</a></li>
+        </ul>
+      </li>
+      <li><a href="#13-连接云服务器" id="markdown-toc-13-连接云服务器">1.3 连接云服务器</a></li>
+    </ul>
+  </li>
+  <li><a href="#2-服务器端安装配置shadowsocks客户端" id="markdown-toc-2-服务器端安装配置shadowsocks客户端">2. 服务器端安装配置Shadowsocks客户端</a>    <ul>
+      <li><a href="#21-安装shadowsocks客户端" id="markdown-toc-21-安装shadowsocks客户端">2.1 安装Shadowsocks客户端</a></li>
+      <li><a href="#22-配置shadowsocks客户端" id="markdown-toc-22-配置shadowsocks客户端">2.2 配置Shadowsocks客户端</a></li>
+    </ul>
+  </li>
+  <li><a href="#3-客服端安装配置shadowsocks客户端" id="markdown-toc-3-客服端安装配置shadowsocks客户端">3. 客服端安装配置Shadowsocks客户端</a></li>
+</ul>
+
+<h1 id="1-服务器购买配置">1. 服务器购买配置</h1>
+<h2 id="11-购买华为云服务器">1.1 购买华为云服务器</h2>
+<ul>
+  <li>进入官方网站
+    <blockquote>
+      <p>https://activity.huaweicloud.com</p>
+    </blockquote>
+  </li>
+  <li>或咨询万能的淘宝卖家</li>
+</ul>
+
+<p>选择购买境外的“弹性云服务器ECS”，价格¥99/年左右合适</p>
+
+<h2 id="12-配置云服务器">1.2 配置云服务器</h2>
+<h3 id="121-配置操作系统">1.2.1 配置操作系统</h3>
+<ul>
+  <li>登录进入个人服务器管理页面“控制台”</li>
+  <li>操作系统选择“CentOS 7.2 64bit”
+    <h3 id="122-配置防火墙">1.2.2 配置防火墙</h3>
+  </li>
+  <li>登录进入个人服务器管理页面“控制台”</li>
+  <li>选择“安全组”，点击“更改安全组”进行配置
+<img src="https://s2.loli.net/2023/03/25/Ay5NcCHzDqtk6IO.jpg" alt="HW1.jpg" /></li>
+  <li>点击“新建安全组”及“创建安全组”进行配置，将SS端口加入
+<img src="https://s2.loli.net/2023/03/25/uYwzCDpZXko7vSP.jpg" alt="HW2.jpg" />
+<img src="https://s2.loli.net/2023/03/25/wjzhK8UgsRyqQX5.jpg" alt="HW3.jpg" /></li>
+  <li>入方向规则添加“1035”端口（即后续设置的SS端口）
+<img src="https://s2.loli.net/2023/03/25/8L5pEdHkPYoO7nS.jpg" alt="HW4.jpg" />
+    <h2 id="13-连接云服务器">1.3 连接云服务器</h2>
+  </li>
+  <li>下载远程连接软件“SSH Secure Shell Client”
+    <blockquote>
+      <p>https://ccm.digidip.net/visit?url=https%3A%2F%2Fec.ccm2.net%2Fccm.net%2Fdownload%2Ffiles%2FSSHSecureShellClient-3.2.9.exe&amp;ppref=https%3A%2F%2Fccm.net%2Fdownloads%2Fsecurity-and-maintenance%2F4997-ssh-secure-shell-windows%2F&amp;currurl=https%3A%2F%2Fccm.net%2Fdownloads%2Fsecurity-and-maintenance%2F4997-ssh-secure-shell-windows%2F%3Fn%3D%26version%3Dwindows</p>
+    </blockquote>
+  </li>
+  <li>打开软件，输入：Host Name 为服务器ip地址，User Name 为 root，进行远程连接
+<img src="https://s2.loli.net/2023/03/25/QZxPEr3qK1yL97i.jpg" alt="HW5.jpg" /></li>
+</ul>
+
+<h1 id="2-服务器端安装配置shadowsocks客户端">2. 服务器端安装配置Shadowsocks客户端</h1>
+
+<h2 id="21-安装shadowsocks客户端">2.1 安装Shadowsocks客户端</h2>
+<ul>
+  <li>安装epel扩展源</li>
+  <li>采用Python包管理工具pip安装。
+    <blockquote>
+      <p>sudo yum -y install epel-release <br />
+sudo yum -y install python-pip</p>
+    </blockquote>
+  </li>
+  <li>安装Shadowsocks客户端
+    <blockquote>
+      <p>sudo pip install shadowsocks</p>
+    </blockquote>
+  </li>
+</ul>
+
+<h2 id="22-配置shadowsocks客户端">2.2 配置Shadowsocks客户端</h2>
+<ul>
+  <li>新建配置文件
+    <blockquote>
+      <p>sudo mkdir /etc/shadowsocks <br />
+sudo vi /etc/shadowsocks/shadowsocks.json</p>
+    </blockquote>
+  </li>
+  <li>添加配置信息
+    <blockquote>
+      <p>{ <br />
+“server”:”0.0.0.0”, <br />
+“server_port”:1035, <br />
+“local_address”: “127.0.0.1”, <br />
+“local_port”:1080, <br />
+“password”:”password”, <br />
+“timeout”:300, <br />
+“method”:”aes-256-cfb”, <br />
+“fast_open”: false, <br />
+“workers”: 1 <br />
+}</p>
+    </blockquote>
+  </li>
+  <li>参数说明：
+server：Shadowsocks服务器地址 <br />
+server_port：Shadowsocks服务器端口 <br />
+local_address：本地IP <br />
+local_port：本地端口 <br />
+password：Shadowsocks连接密码 <br />
+timeout：等待超时时间 <br />
+method：加密方式 <br />
+workers:工作线程数 <br />
+fast_open：true或false。开启fast_open以降低延迟，但要求Linux内核在3.7+。开启方法 
+    <blockquote>
+      <p>echo 3 &gt; /proc/sys/net/ipv4/tcp_fastopen</p>
+    </blockquote>
+  </li>
+  <li>配置自启动 <br />
+① 新建启动脚本文件 
+    <blockquote>
+      <p>vi /etc/systemd/system/shadowsocks.service \</p>
+    </blockquote>
+
+    <p>内容如下：</p>
+    <blockquote>
+      <p>[Unit] <br />
+Description=Shadowsocks <br />
+[Service] <br />
+TimeoutStartSec=0 <br />
+ExecStart=/usr/bin/sslocal -c /etc/shadowsocks/shadowsocks.json <br />
+[Install] <br />
+WantedBy=multi-user.target \</p>
+    </blockquote>
+
+    <p>② 启动Shadowsocks客户端</p>
+    <blockquote>
+      <p>systemctl enable shadowsocks.service <br />
+systemctl start shadowsocks.service <br />
+systemctl status shadowsocks.service \</p>
+    </blockquote>
+  </li>
+</ul>
+
+<h1 id="3-客服端安装配置shadowsocks客户端">3. 客服端安装配置Shadowsocks客户端</h1>
+<ul>
+  <li>下载Shadowsocks的windows版本，并解压安装
+    <blockquote>
+      <p>https://github.com/shadowsocks/shadowsocks-windows/releases/download/2.3.1/Shadowsocks-win-2.3.1.zip</p>
+    </blockquote>
+  </li>
+  <li>配置Shadowsocks客户端：点击服务器-&gt;编辑服务器，输入服务器ip，密码及端口即可保存，之后启用系统代理即可
+<img src="https://s2.loli.net/2023/03/25/AIgvPkXE6KTzryh.jpg" alt="HW6.jpg" /></li>
+  <li>开始你的愉快网上冲浪之旅吧！
+<img src="https://s2.loli.net/2023/03/25/mBlyniaWHbw15M6.jpg" alt="HW7.jpg" /></li>
+</ul>
+:ET
