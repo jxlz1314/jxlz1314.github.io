@@ -42,4 +42,4 @@ author: OpenFOAM
 - 起始行，关键字REACTIONS （或REAC），其后为Arrhenius系数的单位（可选）。
  中间行，反应方程式，然后为该方程的Arrhenius系数(依次为A，β ，E)； $k(T)=AT^bexp(-E_a/R_uT)$
  
- - AL + O2 = ALO + O &emsp 9.72E13 &emsp 0. &emsp 159.95
+ - AL + O2 = ALO + O &emsp; 9.72E13 &emsp; 0. &emsp; 159.95
