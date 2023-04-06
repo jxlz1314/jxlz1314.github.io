@@ -20,3 +20,10 @@ author: OpenFOAM
 - 解决方案如下
 > https://blog.csdn.net/acaist201/article/details/122150850
 ## 2.2 初始化时Floating point exception 溢出错误
+- 错误图片如下
+![error1.jpg](https://s2.loli.net/2023/04/06/TIwNYfdCPy93kFx.jpg)
+- 通过注释大法定位到出错位置位于sprayFoam.C第59行的“#include "compressibleCourantNo.H"”
+- 查看compressibleCourantNo.H如下
+> https://cpp.openfoam.org/v8/src_2finiteVolume_2cfdTools_2compressible_2compressibleCourantNo_8H_source.html
+- 发现其中“fvc::surfaceSum(mag(phi))().primitiveField()/rho.primitiveField()”存在除法，考虑除数为0时可能导致溢出错误
+- 其中的密度由状态方程计算，注意看看初始/边界中的温度/压力等状态，发现初始压力全域为0，需要修改，问题解决。
