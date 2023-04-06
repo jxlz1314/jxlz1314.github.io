@@ -40,6 +40,7 @@ author: OpenFOAM
 - 错误原因：压力量纲不同导致计算的密度量纲不一致。OpenFOAM中不可压缩流体中压力为p/rho（因为密度可由时间导数项提出），量纲为[0 2 -2 0 0 0 0]，可压缩流体中压力为p，量纲为[1 -1 -2 0 0 0 0]
 ## 2.5 CHEMKIN反应机理文件格式
 - 起始行，关键字REACTIONS （或REAC），其后为Arrhenius系数的单位（可选）。
- 中间行，反应方程式，然后为该方程的Arrhenius系数(依次为A，β ，E)； $k(T)=AT^bexp(-E_a/R_uT)$
+ 中间行，反应方程式，然后为该方程的Arrhenius系数(依次为A，β ，E)； E 和A 的默认单位是：cal/mole和cm•mole•sec•K。
+- $k(T)=AT^bexp(-E_a/R_uT)$
  
  - AL + O2 = ALO + O &emsp; 9.72E13 &emsp; 0. &emsp; 159.95
