@@ -19,6 +19,7 @@ author: OpenFOAM
 ## 2.1 Unknown liquidProperties type xxxx
 - 解决方案如下
 > https://blog.csdn.net/acaist201/article/details/122150850
+
 ## 2.2 初始化时Floating point exception 溢出错误
 - 错误图片如下
 
