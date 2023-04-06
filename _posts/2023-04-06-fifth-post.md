@@ -38,8 +38,7 @@ author: OpenFOAM
 
 ![error2.jpg](https://s2.loli.net/2023/04/06/Hn1yOopUXCwN34z.jpg)
 - 错误原因：压力量纲不同导致计算的密度量纲不一致。OpenFOAM中不可压缩流体中压力为p/rho（因为密度可由时间导数项提出），量纲为[0 2 -2 0 0 0 0]，可压缩流体中压力为p，量纲为[1 -1 -2 0 0 0 0]
-
-## 2.4 温度超出给定范围
-- 错误信息如下
-- “attempt to use janafThermo<EquationOfState> out of temperature range 300 -> 4000;  T = 300”
-- sprayFoam中的热物性参数由JANA表多项式插值得到，插值范围为300-4000，超出范围后只能使用外插值。因此给定更大的插值范围，或者调整合适的初始温度是解决的方法
+## 2.5 CHEMKIN反应机理文件格式
+- 起始行，关键字REACTIONS （或REAC），其后为Arrhenius系数的单位（可选）。
+ 中间行，反应方程式，然后为该方程的Arrhenius系数(依次为A，β ，E)； $k(T)=AT^bexp(-E_a/R_uT)$
+ AL + O2 = ALO + O                                9.72E13           0.              159.95
