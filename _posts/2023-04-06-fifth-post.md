@@ -44,3 +44,13 @@ author: OpenFOAM
 - $k(T)=AT^bexp(-E_a/R_uT)$
  
  - AL + O2 = ALO + O &emsp; 9.72E13 &emsp; 0. &emsp; 159.95
+ ## 2.6 OpenFOAM反应机理文件格式
+- 使用chemkinToFoam命令可将CHEMKIN反应机理文件转换为OpenFOAM反应机理文件，使用方法查看chemkinToFoam -help。
+- 使用chemkinToFoam的其他注意事项如下
+> https://openfoam.top/chemkin/
+
+- OpenFOAM中的系数与chemkin中的系数转换关系为。
+- $A_OpenFOAM=A_chemkin$
+- $\beta_OpenFOAM=\beta_chemkin$
+- $E_OpenFOAM=E_chemkin$
+ 
