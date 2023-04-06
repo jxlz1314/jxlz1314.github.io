@@ -33,5 +33,5 @@ author: OpenFOAM
 - 错误图片如下
 
 ![error2.jpg](https://s2.loli.net/2023/04/06/Hn1yOopUXCwN34z.jpg)
-
+- 错误原因：压力量纲不同导致计算的密度量纲不一致。OpenFOAM中不可压缩流体中压力为p/\rho
 
