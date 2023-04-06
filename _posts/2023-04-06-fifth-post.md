@@ -50,7 +50,7 @@ author: OpenFOAM
 > https://openfoam.top/chemkin/
 
 - OpenFOAM中的系数与chemkin中的系数转换关系为。
-- $A_OpenFOAM=A_chemkin$
-- $\beta_OpenFOAM=\beta_chemkin$
-- $E_OpenFOAM=E_chemkin$
+- $A_{OpenFOAM}=A_{chemkin}$
+- $\beta_{OpenFOAM}=\beta_{chemkin}$
+- $E_{OpenFOAM}=E_{chemkin}$
  
