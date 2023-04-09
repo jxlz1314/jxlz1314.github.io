@@ -26,3 +26,11 @@ author: JIANG
 | 合计 | - | - | 8400 |
 
 - 然而最终配置中，考虑到服务器主板与普通PC主板不同，机箱需要改装螺丝孔，否则会造成主板短路点不亮，因此最终放弃了自己动手DIY的想法。从淘宝上就近随便选择一家配置主机服务器的店家进行配置，最终花费略高于初始预算（8400）。
+# 2. 关于服务器Ubuntu系统安装
+- 最初打算在服务器上安装Ubuntu 16.04系统，然而在制作完成系统启动盘，安装时报错
+> core perfctr but no constraints; unknown hardware!
+- 经过查询得知这个是 AMD Family-17h 与较老版本内核（Linux 4.11及以下）之间的一个兼容性问题，如下：
+> https://www.ogura.io/posts/2020/11/amd-family-17h-compatibility-issue-with-older-kernel-version/
+- 因此最终改为安装更新Linux内核的Ubuntu 18.04，选用的安装教程如下：
+> https://blog.csdn.net/weixin_45915259/article/details/123928722
+> https://ac.nowcoder.com/discuss/1013182?type=5&order=3&page=1&channel=-1
