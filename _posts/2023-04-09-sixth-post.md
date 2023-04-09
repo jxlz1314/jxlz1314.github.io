@@ -33,13 +33,16 @@ author: JIANG
 > https://www.ogura.io/posts/2020/11/amd-family-17h-compatibility-issue-with-older-kernel-version/
 - 因此最终改为安装更新Linux内核的Ubuntu 18.04，选用的安装教程如下：
 > https://blog.csdn.net/weixin_45915259/article/details/123928722
+
 > https://ac.nowcoder.com/discuss/1013182?type=5&order=3&page=1&channel=-1
 
 # 2. 关于OpenFOAM v1902及paraview 5.6.0安装
 ## 2.1 安装教程
 - 参考如下链接进行安装
 > https://openfoamwiki.net/index.php/Installation/Linux/OpenFOAM-v1806/Ubuntu
+
 > https://blog.csdn.net/dongyaoyao555/article/details/122923091
+
 > https://zhuanlan.zhihu.com/p/541266216
 
 ## 2.2 安装问题
@@ -47,8 +50,11 @@ author: JIANG
 > https://www.cfd-online.com/Forums/openfoam-installation/247326-paraview-black-screen.html  
 
 > https://www.cfd-online.com/Forums/paraview/213554-black-screen-paraview-5-6-0-ubuntu-18-04-after-openfoam-update.html
+
 > https://www.cfd-china.com/topic/3769/paraview%E6%97%A0%E6%95%85%E9%BB%91%E5%B1%8F
+
 > https://www.cfd-china.com/topic/6282/%E5%85%B3%E4%BA%8Eubuntu18-04%E4%B8%8Bparafoam%E9%BB%91%E5%B1%8F%E7%9A%84%E9%97%AE%E9%A2%98
+
 > https://www.cnblogs.com/erichf/p/12929481.html
 
 安装/更新显卡驱动，使用--mesa版本的paraview可能是解决方案，其次，可将系统升级至Ubuntu20.04
