@@ -52,7 +52,6 @@ author: JIANG
 > https://www.cfd-online.com/Forums/paraview/213554-black-screen-paraview-5-6-0-ubuntu-18-04-after-openfoam-update.html
 
 > https://www.cfd-china.com/topic/3769/paraview%E6%97%A0%E6%95%85%E9%BB%91%E5%B1%8F
-
 > https://www.cfd-china.com/topic/6282/%E5%85%B3%E4%BA%8Eubuntu18-04%E4%B8%8Bparafoam%E9%BB%91%E5%B1%8F%E7%9A%84%E9%97%AE%E9%A2%98
 > https://www.cnblogs.com/erichf/p/12929481.html
 
