@@ -44,7 +44,8 @@ author: JIANG
 
 ## 2.2 安装问题
 - 按照以上教程安装，可以成功的运行OpenFOAM v1902及paraview 5.6.0，然而不幸的是paraview的界面无法正确显示，出现黑屏，但是运行正常，该有的按钮仍能够点击。目前讨论的原因集中于paraview使用高版本的OpenGL，以及系统显卡驱动没有正确安装导致的。相关讨论如下：
-> https://www.cfd-online.com/Forums/openfoam-installation/247326-paraview-black-screen.html
+> https://www.cfd-online.com/Forums/openfoam-installation/247326-paraview-black-screen.html  
+
 > https://www.cfd-online.com/Forums/paraview/213554-black-screen-paraview-5-6-0-ubuntu-18-04-after-openfoam-update.html
 > https://www.cfd-china.com/topic/3769/paraview%E6%97%A0%E6%95%85%E9%BB%91%E5%B1%8F
 > https://www.cfd-china.com/topic/6282/%E5%85%B3%E4%BA%8Eubuntu18-04%E4%B8%8Bparafoam%E9%BB%91%E5%B1%8F%E7%9A%84%E9%97%AE%E9%A2%98
