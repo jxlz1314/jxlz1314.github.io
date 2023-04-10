@@ -55,4 +55,6 @@ author: OpenFOAM
 - $A_{OpenFOAM}=A_{chemkin}$
 - $\beta_{OpenFOAM}=\beta_{chemkin}$
 - $E_{OpenFOAM}=E_{chemkin}$
- 
+ ## 2.7 创建新液滴热物性参数时编译报错“ error: no matching function for call to ‘Foam::NSRDSfunc0::NSRDSfunc0(double, int, int, int, int)’”
+- 值得注意的是，这里每次报错位置都是指向最后一个参数D_的格式，然而实际上格式错误可能发生在中间参数的任意位置，需要仔细核对NSRDSfunc格式（参考源码如下）与书写参数格式的差异。
+> https://cpp.openfoam.org/v8/dir_a2bac1f1c72a552f3f257577a8b591e1.html
