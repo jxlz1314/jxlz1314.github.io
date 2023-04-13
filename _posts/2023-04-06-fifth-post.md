@@ -55,8 +55,7 @@ author: OpenFOAM
 - OpenFOAM中的系数与chemkin中的系数转换关系为。
 - $\beta_{OpenFOAM}=\beta_{chemkin}$
 - ${T_a}_{OpenFOAM}=（cal to J）*{E_a}{chemkin}/R_u=0.5032{E_a}{chemkin}$
-- 然而值得注意的是，指前系数A的单位转换较为复杂。其中A的单位与反应系数k一致，在OpenFOAM中为$(kmol/m^3)^{order}/s$,而在CHEMKIN中则为$(mol/cm^3)^{order}/s$
-
+- 然而值得注意的是，指前系数A的单位转换较为复杂。其中A的单位与反应系数k一致，在OpenFOAM中为$(kmol/m^3)^{order}/s$,而在CHEMKIN中则为$(mol/cm^3)^{order}/s$;order为反应的级数，因此二则转换关系为：$A_{OpenFOAM}=A_{chemkin}$
 - $A_{OpenFOAM}=A_{chemkin}$
  ## 2.7 创建新液滴热物性参数时编译报错“ error: no matching function for call to ‘Foam::NSRDSfunc0::NSRDSfunc0(double, int, int, int, int)’”
 - 值得注意的是，这里每次报错位置都是指向最后一个参数D_的格式，然而实际上格式错误可能发生在中间参数的任意位置，需要仔细核对NSRDSfunc格式（参考源码如下）与书写参数格式的差异。
