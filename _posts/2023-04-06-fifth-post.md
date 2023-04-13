@@ -57,7 +57,8 @@ author: OpenFOAM
 - ${T_a}_{OpenFOAM}=（cal to J）*{E_a}{chemkin}/R_u=0.5032{E_a}{chemkin}$
 - 然而值得注意的是，指前系数A的单位转换较为复杂。其中A的单位与反应系数k一致，在OpenFOAM中为
 - $(kmol/m^3)^{order}/s$
-- 而在CHEMKIN中则为$(mol/cm^3)^{order}/s$
+- 而在CHEMKIN中则为
+- $(mol/cm^3)^{order}/s$
 - order为反应的级数，因此二则转换关系为：
 - $A_{OpenFOAM}=A_{chemkin}$
  ## 2.7 创建新液滴热物性参数时编译报错“ error: no matching function for call to ‘Foam::NSRDSfunc0::NSRDSfunc0(double, int, int, int, int)’”
