@@ -42,7 +42,7 @@ author: OpenFOAM
 - 错误原因：压力量纲不同导致计算的密度量纲不一致。OpenFOAM中不可压缩流体中压力为p/rho（因为密度可由时间导数项提出），量纲为[0 2 -2 0 0 0 0]，可压缩流体中压力为p，量纲为[1 -1 -2 0 0 0 0]
 ## 2.5 CHEMKIN反应机理文件格式
 - 起始行，关键字REACTIONS （或REAC），其后为Arrhenius系数的单位（可选）。
- 中间行，反应方程式，然后为该方程的Arrhenius系数(依次为A，β ，E)； E 和A 的默认单位是：cal/mole和cm•mole•sec•K。
+ 中间行，反应方程式，然后为该方程的Arrhenius系数(依次为A，β ，E)； E 和A 的默认单位是：cal/mole和cm-mole-sec-K单位制。
 - $k(T)=AT^bexp(-E_a/R_uT)$
  
  - AL + O2 = ALO + O &emsp; 9.72E13 &emsp; 0. &emsp; 159.95
@@ -51,10 +51,11 @@ author: OpenFOAM
 - 使用chemkinToFoam的其他注意事项如下
 > https://openfoam.top/chemkin/
 
+- OpenFOAM中的$T_a$和A 的默认单位是：K和cm-mole-sec-K。。
 - OpenFOAM中的系数与chemkin中的系数转换关系为。
 - $A_{OpenFOAM}=A_{chemkin}$
 - $\beta_{OpenFOAM}=\beta_{chemkin}$
-- $E_{OpenFOAM}=E_{chemkin}$
+- ${T_a}_{OpenFOAM}=（cal to J）*{E_a}{chemkin}/R_u=0.5032{E_a}{chemkin}$
  ## 2.7 创建新液滴热物性参数时编译报错“ error: no matching function for call to ‘Foam::NSRDSfunc0::NSRDSfunc0(double, int, int, int, int)’”
 - 值得注意的是，这里每次报错位置都是指向最后一个参数D_的格式，然而实际上格式错误可能发生在中间参数的任意位置，需要仔细核对NSRDSfunc格式（参考源码如下）与书写参数格式的差异。
 > https://cpp.openfoam.org/v8/dir_a2bac1f1c72a552f3f257577a8b591e1.html
