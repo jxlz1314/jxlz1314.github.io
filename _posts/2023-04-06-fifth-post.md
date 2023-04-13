@@ -58,7 +58,6 @@ author: OpenFOAM
 - 然而值得注意的是，指前系数A的单位转换较为复杂。其中A的单位与反应系数k一致，在OpenFOAM中为
 - $(kmol/m^3)^{order}/s$
 - 而在CHEMKIN中则为
-- 
 - $(mol/cm^3)^{order}/s$
 - order为反应的级数，因此二则转换关系为：
 - $A_{OpenFOAM}=A_{chemkin}$
