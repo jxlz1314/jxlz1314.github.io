@@ -67,3 +67,9 @@ author: OpenFOAM
  ## 2.8 运行时中间报错“Maximum number of iterations exceeded”
  - 解决方法：选用更稳定的离散格式
 > https://groups.google.com/g/openfoam/c/5DaXxteXPWQ?pli=1
+ ## 2.9 sprayCloudProperties字典中部分参数解析
+  - heatTransferModel   RanzMarshall;
+  - 流体-颗粒之间的对流传热模型中Nu数通过RanzMarshall经验公式计算
+  - $Nu=a+bRe_p^mPr^n$
+  > https://www.openfoam.com/documentation/guides/latest/api/classFoam_1_1RanzMarshall.html
+  > https://cpp.openfoam.org/v8/src_2lagrangian_2intermediate_2submodels_2Thermodynamic_2HeatTransferModel_2RanzMarshall_2RanzMarshall_8H_source.html
