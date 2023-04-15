@@ -72,11 +72,13 @@ author: OpenFOAM
   - 流体-颗粒之间的对流传热模型中Nu数通过RanzMarshall经验公式计算
   - $Nu=a+bRe_p^mPr^n$
   > https://www.openfoam.com/documentation/guides/latest/api/classFoam_1_1RanzMarshall.html
+  
   > https://cpp.openfoam.org/v8/src_2lagrangian_2intermediate_2submodels_2Thermodynamic_2HeatTransferModel_2RanzMarshall_2RanzMarshall_8H_source.html
     
    - phaseChangeModel   liquidEvaporationBoil;
    - 液滴蒸发模型，参见讨论
   > https://cpp.openfoam.org/v8/LiquidEvaporationBoil_8C_source.html
+  
   > https://www.cfd-online.com/Forums/openfoam-programming-development/176771-liquidevaporationboil-liquidevaporation.html
 
 
