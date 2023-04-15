@@ -76,9 +76,11 @@ author: OpenFOAM
   > https://cpp.openfoam.org/v8/src_2lagrangian_2intermediate_2submodels_2Thermodynamic_2HeatTransferModel_2RanzMarshall_2RanzMarshall_8H_source.html
     
    - phaseChangeModel   liquidEvaporationBoil;
-   - 液滴相变蒸发模型，参见讨论
+   - 液滴相变蒸发模型，来自文献     "Studies of Superheated Fuel Spray Structures and Vaporization in GDI Engines" Zuo, B., Gomes, A. M. and Rutland C. J. International Journal of Engine Research, 2000, Vol. 1(4), pp. 321-336 相关实现参见讨论
   > https://cpp.openfoam.org/v8/LiquidEvaporationBoil_8C_source.html
   
   > https://www.cfd-online.com/Forums/openfoam-programming-development/176771-liquidevaporationboil-liquidevaporation.html
+  
+  > https://cpp.openfoam.org/v8/classFoam_1_1LiquidEvaporationBoil.html
 
 
