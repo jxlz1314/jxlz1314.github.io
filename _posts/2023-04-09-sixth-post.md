@@ -58,3 +58,8 @@ author: JIANG
 > https://www.cnblogs.com/erichf/p/12929481.html
 
 安装/更新显卡驱动，使用--mesa版本的paraview可能是解决方案，其次，可将系统升级至Ubuntu20.04
+# 3. 关于LAMMPS及VMD安装
+- 可参考如下链接进行安装
+> https://zhuanlan.zhihu.com/p/36457551
+
+- 然而实际上由于安装OpenFOAM时已经将LAMMPS所需的一些库文件安装完毕，因此可以跳过fftw及MPICH的安装环节，直接安装LAMMPS及VMD
