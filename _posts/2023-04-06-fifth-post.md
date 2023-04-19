@@ -90,7 +90,18 @@ author: OpenFOAM
   - 需要注意到parcels.Srho(rho).ref()这一项类别为fvMatrix，里面储存了离散后的矩阵方程系数，详细解析如下：
   > https://marinecfd.xyz/post/from-geometricfield-to-fvmatrix/
 
-  - 需要注意对于fvMatrix的运算，在OpenFOAM中均进行了重载如下，例如对于运算符“==”
+  - 需要注意对于fvMatrix的运算，在OpenFOAM中均进行了重载如下：
   > https://cpp.openfoam.org/v8/fvMatrix_8C_source.html
   
-
+  - 例如对于运算符“==”，有
+  - 
+ template<class Type>
+ Foam::tmp<Foam::fvMatrix<Type>> Foam::operator==
+ (
+     const tmp<fvMatrix<Type>>& tA,
+     const tmp<fvMatrix<Type>>& tB
+ )
+ {
+     checkMethod(tA(), tB(), "==");
+     return (tA - tB);
+ }
