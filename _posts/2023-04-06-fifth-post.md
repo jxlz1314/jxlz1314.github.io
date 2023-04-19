@@ -95,7 +95,7 @@ author: OpenFOAM
   
   - 例如对于运算符“==”，有
   >  template<class Type>  
-     Foam::tmp<Foam::fvMatrix<Type>>  
+  >  Foam::tmp<Foam::fvMatrix<Type>>  
      Foam::operator==
  (
      const tmp<fvMatrix<Type>>& tA,
