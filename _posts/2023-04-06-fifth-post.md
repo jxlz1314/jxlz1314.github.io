@@ -94,7 +94,7 @@ author: OpenFOAM
   > https://cpp.openfoam.org/v8/fvMatrix_8C_source.html
   
   - 例如对于运算符“==”，有
-  >  template\<class Type>
+  >  template\<class Type> \
   >  Foam::tmp<Foam::fvMatrix<Type>>  
   >  Foam::operator== \
   >  ( \
@@ -105,3 +105,7 @@ author: OpenFOAM
   >  checkMethod(tA(), tB(), "=="); \
   >  return (tA - tB); \
   >  } 
+ 
+ - 这里B.source()如果是负值，A-B后的方程源项即能得到正值的B.source()
+ - 这里B.source
+ 
