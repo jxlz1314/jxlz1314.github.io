@@ -85,5 +85,5 @@ author: OpenFOAM
   
   ## 2.10 sprayFOAM的连续性方程中源项parcels.Srho(rho)输出为负
   - 使用parcels.Srho(rho).ref().source()可输出源项的值，然而输出的均为负值。考虑蒸发相变的连续性方程:
-  - $\frac{\partial\rho}{\partial t}$
+  - $\frac{\partial\rho}{\partial t}+\nabla\cdots\rho U$
 
