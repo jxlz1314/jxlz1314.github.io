@@ -107,5 +107,5 @@ author: OpenFOAM
   >  } 
  
  - 这里B.source()如果是负值，A-B后的方程源项即能得到正值的B.source()
- - 这里B.source
+ - 需要区分B为DimensionedField时符号不同的情况。
  
