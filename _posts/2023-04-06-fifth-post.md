@@ -96,12 +96,12 @@ author: OpenFOAM
   - 例如对于运算符“==”，有
   >  template<class Type>  
   >  Foam::tmp<Foam::fvMatrix<Type>>  
-  >  Foam::operator==
-  >  (
-  >  const tmp<fvMatrix<Type>>& tA,
-  >  const tmp<fvMatrix<Type>>& tB
-  >  )
-  >  {
-  >  checkMethod(tA(), tB(), "==");
-  >  return (tA - tB);
-  >  }
+  >  Foam::operator== \
+  >  ( \
+  >  const tmp<fvMatrix<Type>>& tA, \
+  >  const tmp<fvMatrix<Type>>& tB \
+  >  ) \
+  >  { \
+  >  checkMethod(tA(), tB(), "=="); \
+  >  return (tA - tB); \
+  >  } \
