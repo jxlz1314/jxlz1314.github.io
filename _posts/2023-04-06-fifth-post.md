@@ -86,5 +86,11 @@ author: OpenFOAM
   ## 2.10 sprayFOAM的连续性方程中源项parcels.Srho(rho)输出为负
   - 使用parcels.Srho(rho).ref().source()可输出源项的值，然而输出的均为负值。考虑蒸发相变的连续性方程:
   - $\frac{\partial\rho}{\partial t}+\nabla\cdot\rho U=\dot{S}_{\rho}$
-  - 这里的源项$\dot{S}_{\rho}$为
+  - 这里的源项为颗粒由液相->气相时带来的源项，显然应该为正值，为何输出为负值呢？
+  - 需要注意到parcels.Srho(rho).ref()这一项类别为fvMatrix，里面储存了离散后的矩阵方程系数，详细解析如下：
+  > https://marinecfd.xyz/post/from-geometricfield-to-fvmatrix/
+
+  - 需要注意对于fvMatrix的运算，在OpenFOAM中均进行了重载如下，例如对于运算符“==”
+  > https://cpp.openfoam.org/v8/fvMatrix_8C_source.html
+  
 
