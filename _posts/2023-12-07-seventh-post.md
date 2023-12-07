@@ -1,15 +1,20 @@
 ---
 layout: post
-title:  "sprayFoam模拟铝粉燃烧注意事项"
-categories: OpenFOAM
-tags:  OpenFOAM
-author: OpenFOAM
+title:  "Whatsapp如何在大陆的iphone上使用"
+categories: 教程
+tags:  教程
+author: JIANG Xiao
 ---
 
 * content
 {:toc}
 
-# 1. 关于sprayFoam
+# 1. 下载安装VPN软件Shadowrocket至iphone
+## 1.1 打开手机的app store
+![image](https://github.com/jxlz1314/jxlz1314.github.io/assets/69498712/425c8010-1faf-42f1-a8a0-2712eb758069)
+
+
+
 - 代码可在下面查看
 > https://cpp.openfoam.org/v8/sprayFoam_8C_source.html
 - 以下是关于sprayFoam的一些解析及算例中的参数解释
