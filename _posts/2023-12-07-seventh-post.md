@@ -35,6 +35,9 @@ author: JIANG Xiao
 # 3. 配置Whatsapp
 ## 3.1 打开Whatapp，输入手机号登陆，如果无法收到验证码可选择语音接收。
 ## 3.2 添加想要联系的联系人电话号码到通讯录中，然后点击Whatsapp右上角查找该联系人即可。
+## 3.3 开始畅聊吧。
+![image](https://github.com/jxlz1314/jxlz1314.github.io/assets/69498712/189502d6-3a37-4604-8f49-3d13996c1e66)
+
 
 
  
