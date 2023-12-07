@@ -29,8 +29,12 @@ author: JIANG Xiao
 - 输入URL订阅地址到下面示意图中：https://tj.tr0jan.com/api/v1/client/subscribe?token=51ecbaad17dea56e1b524aeec449c83c
 ![image](https://github.com/jxlz1314/jxlz1314.github.io/assets/69498712/6894a999-3ae1-4306-996e-7246f278e6a2)
 ## 2.2 回到Shadowrocket主界面，选择HK1S节点，点击第一排开关打开Shadowrocket 即可使用。
-
-
+![image](https://github.com/jxlz1314/jxlz1314.github.io/assets/69498712/f3d2d735-c630-479e-a0aa-440365d1b117)
+## 2.3 Shadowrocket安装完成，在浏览器输入www.google.hk 测试是否配置成功。
+![image](https://github.com/jxlz1314/jxlz1314.github.io/assets/69498712/22bf02d9-22ca-4ab2-bc09-f6a1bbe2fc7e)
+# 3. 配置Whatsapp
+## 3.1 打开Whatapp，输入手机号登陆，如果无法收到验证码可选择语音接收。
+## 3.2 添加想要联系的联系人电话号码到通讯录中，然后点击Whatsapp右上角查找该联系人即可。
 
 
  
