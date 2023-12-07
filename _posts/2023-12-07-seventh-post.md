@@ -26,7 +26,7 @@ author: JIANG Xiao
 # 2. 配置Shadowrocket
 ## 2.1 打开下载的Shadowrocket，选中「首页」选项卡，点击右上角的「+」。
 ![image](https://github.com/jxlz1314/jxlz1314.github.io/assets/69498712/efea5926-2843-4da3-817b-68a59d4b1301)
-输入URL订阅地址到下面示意图中：https://tj.tr0jan.com/api/v1/client/subscribe?token=51ecbaad17dea56e1b524aeec449c83c
+- 输入URL订阅地址到下面示意图中：https://tj.tr0jan.com/api/v1/client/subscribe?token=51ecbaad17dea56e1b524aeec449c83c
 ![image](https://github.com/jxlz1314/jxlz1314.github.io/assets/69498712/6894a999-3ae1-4306-996e-7246f278e6a2)
 ## 2.2 回到Shadowrocket主界面，选择HK1S节点，点击第一排开关打开Shadowrocket 即可使用。
 
