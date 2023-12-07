@@ -12,6 +12,15 @@ author: JIANG Xiao
 # 1. 下载安装VPN软件Shadowrocket至iphone
 ## 1.1 打开手机的app store
 ![image](https://github.com/jxlz1314/jxlz1314.github.io/assets/69498712/425c8010-1faf-42f1-a8a0-2712eb758069)
+## 1.2 点击右上角头像
+![image](https://github.com/jxlz1314/jxlz1314.github.io/assets/69498712/930c5571-d587-41f1-815a-9005c7f9dd36)
+## 1.3 下滑至最下方，点击“退出登录”
+![image](https://github.com/jxlz1314/jxlz1314.github.io/assets/69498712/4bd5def9-7f89-46a2-9727-dc2c27cb036a)
+## 1.4 在上方输入apple id：ffhafaeyb@maoe.cc 密码：Aneeo123456 后再点击登录，后选择“其他选项”后选择“不升级”
+![image](https://github.com/jxlz1314/jxlz1314.github.io/assets/69498712/8ce29c23-5ea9-44d0-a089-35861cd414a0)
+![image](https://github.com/jxlz1314/jxlz1314.github.io/assets/69498712/4826f87f-afe0-41a5-b2c5-3e656afda983)
+![image](https://github.com/jxlz1314/jxlz1314.github.io/assets/69498712/41197bbe-9ea5-4f87-bc5e-bbde0a17e30a)
+
 
 
 
