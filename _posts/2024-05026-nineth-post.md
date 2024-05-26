@@ -21,4 +21,5 @@ author: JIANG Xiao
 #8  __libc_start_main in /lib/x86_64-linux-gnu/libc.so.6
 #9  ? at ??:?
 
-参考CFD online的解决方法：https://www.cfd-online.com/Forums/fluent/109165-update_time_level-invalid-data.html
+原因：
+解决方法：
